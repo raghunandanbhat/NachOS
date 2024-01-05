@@ -1,0 +1,122 @@
+A	matmult.c	16
+A	sort.c	25
+AS	Makefile	/^AS = $(GCCDIR)as$/
+Add	start.S	/^Add:$/
+B	matmult.c	17
+BLDDIR	Makefile	/^BLDDIR=build$/
+C	matmult.c	18
+CC	Makefile	/^CC = $(GCCDIR)gcc$/
+CFLAGS	Makefile	/^CFLAGS = -G 0 -c $(INCDIR) -B\/usr\/local\/nachos\/lib/
+Close	start.S	/^Close:$/
+Create	start.S	/^Create:$/
+Dim	matmult.c	12
+Exec	start.S	/^Exec:$/
+ExecV	start.S	/^ExecV:$/
+Exit	sort.c	18
+Exit	start.S	/^Exit:$/
+Halt	start.S	/^Halt:$/
+INCDIR	Makefile	/^INCDIR =-I..\/userprog -I..\/lib$/
+Join	start.S	/^Join:$/
+LD	Makefile	/^LD = $(GCCDIR)ld$/
+Madd	add.c	/^main()$/
+Mexit-test0	exit-test0.c	/^main()$/
+Mexit-test1	exit-test1.c	/^main()$/
+Mfile-test0	file-test0.c	/^main()$/
+Mfile-test1	file-test1.c	/^main()$/
+Mfile-test2	file-test2.c	/^main()$/
+Mfile-test3	file-test3.c	/^main()$/
+Mhalt	halt.c	/^main()$/
+Mmatmult	matmult.c	/^main()$/
+Mprog1	prog1.c	/^main()$/
+Mprog2	prog2.c	/^main()$/
+Mprog3	prog3.c	/^main()$/
+Mprog3b	prog3b.c	/^main()$/
+Mprog4	prog4.c	/^main()$/
+Mprog5	prog5.c	/^main()$/
+Mread	read.c	/^main()$/
+Mread-write	read-write.c	/^main()$/
+Msegments	segments.c	/^main()$/
+Mshell	shell.c	/^main()$/
+Msort	sort.c	/^main()$/
+Mwrite	write.c	/^main()$/
+N	segments.c	17
+OUTPUT_FORMAT	script	/^OUTPUT_FORMAT("ecoff-littlemips")$/
+Open	start.S	/^Open:$/
+PROGRAMS	Makefile	/^PROGRAMS = unknownhost$/
+PROGRAMS	Makefile	/^PROGRAMS = add halt shell matmult sort segments re/
+Read	start.S	/^Read:$/
+Remove	start.S	/^Remove:$/
+SIZE	sort.c	23
+Seek	start.S	/^Seek:$/
+ThreadExit	start.S	/^ThreadExit:$/
+ThreadFork	start.S	/^ThreadFork:$/
+ThreadJoin	start.S	/^ThreadJoin:$/
+ThreadYield	start.S	/^ThreadYield:$/
+Write	start.S	/^Write:$/
+__main	start.S	/^__main:$/
+__start	script	/^ENTRY(__start)$/
+__start	start.S	/^__start:$/
+add	Makefile	/^add: add.o start.o$/
+add.o	Makefile	/^add.o: add.c$/
+all	Makefile	/^all: $(PROGRAMS) post$/
+blah	segments.c	21
+clean	Makefile	/^clean:$/
+data	file-test0.c	3
+data	prog1.c	3
+data	read.c	3
+data	write.c	3
+distclean	Makefile	/^distclean: clean$/
+exit-test0	Makefile	/^exit-test0: exit-test0.o start.o$/
+exit-test0.o	Makefile	/^exit-test0.o: exit-test0.c$/
+exit-test1	Makefile	/^exit-test1: exit-test1.o start.o$/
+exit-test1.o	Makefile	/^exit-test1.o: exit-test1.c$/
+file-test0	Makefile	/^file-test0: file-test0.o start.o$/
+file-test0.o	Makefile	/^file-test0.o: file-test0.c$/
+file-test1	Makefile	/^file-test1: file-test1.o start.o$/
+file-test1.o	Makefile	/^file-test1.o: file-test1.c$/
+file-test2	Makefile	/^file-test2: file-test2.o start.o$/
+file-test2.o	Makefile	/^file-test2.o: file-test2.c$/
+file-test3	Makefile	/^file-test3: file-test3.o start.o$/
+file-test3.o	Makefile	/^file-test3.o: file-test3.c$/
+halt	Makefile	/^halt: halt.o start.o$/
+halt.o	Makefile	/^halt.o: halt.c$/
+initdata1	segments.c	19
+initdata2	segments.c	20
+itoa	prog3b.c	/^itoa(SpaceId id, char* str)$/
+itoa	prog3.c	/^itoa(SpaceId id, char* str)$/
+itoa	prog5.c	/^itoa(SpaceId id, char* str)$/
+matmult	Makefile	/^matmult: matmult.o start.o$/
+matmult.o	Makefile	/^matmult.o: matmult.c$/
+osname	Makefile.dep	13
+post	Makefile	/^post:$/
+prog1	Makefile	/^prog1: prog1.o start.o$/
+prog1.o	Makefile	/^prog1.o: prog1.c$/
+prog2	Makefile	/^prog2: prog2.o start.o$/
+prog2.o	Makefile	/^prog2.o: prog2.c$/
+prog3	Makefile	/^prog3: prog3.o start.o$/
+prog3.o	Makefile	/^prog3.o: prog3.c$/
+prog3b	Makefile	/^prog3b: prog3b.o start.o$/
+prog3b.o	Makefile	/^prog3b.o: prog3b.c$/
+prog4	Makefile	/^prog4: prog4.o start.o$/
+prog4.o	Makefile	/^prog4.o: prog4.c$/
+prog5	Makefile	/^prog5: prog5.o start.o$/
+prog5.o	Makefile	/^prog5.o: prog5.c$/
+read	Makefile	/^read: read.o start.o$/
+read-write	Makefile	/^read-write: read-write.o start.o$/
+read-write.o	Makefile	/^read-write.o: read-write.c$/
+read.o	Makefile	/^read.o: read.c$/
+segments	Makefile	/^segments: segments.o start.o$/
+segments.o	Makefile	/^segments.o: segments.c$/
+shell	Makefile	/^shell: shell.o start.o$/
+shell.o	Makefile	/^shell.o: shell.c$/
+sort	Makefile	/^sort: sort.o start.o$/
+sort.o	Makefile	/^sort.o: sort.c$/
+start.o	Makefile	/^start.o: start.S ..\/userprog\/syscall.h$/
+strcpy	prog3b.c	/^strcpy(char* dst, char* src)$/
+strcpy	prog3.c	/^strcpy(char* dst, char* src)$/
+strcpy	prog5.c	/^strcpy(char* dst, char* src)$/
+tostring	file-test3.c	/^int tostring(char str[], int num)$/
+uninitdata	segments.c	22
+unknownhost	Makefile	/^unknownhost:$/
+write	Makefile	/^write: write.o start.o$/
+write.o	Makefile	/^write.o: write.c$/

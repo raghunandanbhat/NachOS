@@ -1,0 +1,319 @@
+.globl	switch.S	/^.globl	ThreadRoot$/
+.globl	switch.S	/^.globl	_ThreadRoot$/
+.globl	switch.S	/^.globl	SWITCH$/
+.globl	switch.S	/^.globl	_SWITCH$/
+.seg	switch.S	/^.seg    "text"$/
+ALARM_H	alarm.h	18
+Acquire	synch.cc	/^void Lock::Acquire()$/
+Alarm	alarm.cc	/^Alarm::Alarm(bool doRandom)$/
+Alarm	alarm.h	26
+Append	synchlist.cc	/^SynchList<T>::Append(T item)$/
+Apply	synchlist.cc	/^SynchList<T>::Apply(void (*func)(T))$/
+BLOCKED	thread.h	65
+Begin	thread.cc	/^Thread::Begin ()$/
+Broadcast	synch.cc	/^void Condition::Broadcast(Lock* conditionLock) $/
+CR	switch.h	203
+CallBack	alarm.cc	/^Alarm::CallBack() $/
+CheckOverflow	thread.cc	/^Thread::CheckOverflow()$/
+CheckToBeDestroyed	scheduler.cc	/^Scheduler::CheckToBeDestroyed()$/
+Cleanup	main.cc	/^Cleanup(int x) $/
+Condition	synch.cc	/^Condition::Condition(char* debugName)$/
+Condition	synch.h	124
+ConsoleTest	kernel.cc	/^Kernel::ConsoleTest() {$/
+Copy	main.cc	/^Copy(char *from, char *to)$/
+FP	switch.h	38
+FP	switch.h	78
+FP13	switch.h	185
+FP15	switch.h	186
+FP16	switch.h	187
+FP17	switch.h	188
+FP18	switch.h	189
+FP19	switch.h	190
+FP20	switch.h	191
+FP21	switch.h	192
+FP22	switch.h	193
+FP23	switch.h	194
+FP24	switch.h	195
+FP25	switch.h	196
+FP26	switch.h	197
+FP27	switch.h	198
+FP28	switch.h	199
+FP29	switch.h	200
+FP30	switch.h	201
+FP31	switch.h	202
+FPState	switch.h	57
+FPState	switch.h	146
+FPState	switch.h	260
+FindNextToRun	scheduler.cc	/^Scheduler::FindNextToRun ()$/
+Finish	thread.cc	/^Thread::Finish ()$/
+Fork	thread.cc	/^Thread::Fork(VoidFunctionPtr func, void *arg)$/
+GP	switch.h	242
+GP13	switch.h	166
+GP14	switch.h	167
+GP15	switch.h	168
+GP16	switch.h	169
+GP17	switch.h	170
+GP18	switch.h	171
+GP19	switch.h	172
+GP20	switch.h	173
+GP21	switch.h	174
+GP22	switch.h	175
+GP23	switch.h	176
+GP24	switch.h	177
+GP25	switch.h	178
+GP26	switch.h	179
+GP27	switch.h	180
+GP28	switch.h	181
+GP29	switch.h	182
+GP30	switch.h	183
+GP31	switch.h	184
+I0	switch.h	68
+I1	switch.h	69
+I2	switch.h	70
+I3	switch.h	71
+I4	switch.h	72
+I5	switch.h	73
+I6	switch.h	74
+I7	switch.h	75
+InitialArg	switch.h	52
+InitialArg	switch.h	83
+InitialArg	switch.h	119
+InitialArg	switch.h	153
+InitialArg	switch.h	219
+InitialArg	switch.h	255
+InitialArgState	switch.h	59
+InitialArgState	switch.h	89
+InitialArgState	switch.h	125
+InitialArgState	switch.h	148
+InitialArgState	switch.h	211
+InitialArgState	switch.h	262
+InitialLR	switch.h	218
+InitialPC	switch.h	51
+InitialPC	switch.h	82
+InitialPC	switch.h	118
+InitialPC	switch.h	152
+InitialPC	switch.h	254
+InitialPCState	switch.h	58
+InitialPCState	switch.h	88
+InitialPCState	switch.h	124
+InitialPCState	switch.h	147
+InitialPCState	switch.h	210
+InitialPCState	switch.h	261
+Initialize	kernel.cc	/^Kernel::Initialize()$/
+IsHeldByCurrentThread	synch.h	/^    bool IsHeldByCurrentThread() { $/
+JUST_CREATED	thread.h	65
+KERNEL_H	kernel.h	9
+Kernel	kernel.cc	/^Kernel::Kernel(int argc, char **argv)$/
+Kernel	kernel.h	28
+LR	switch.h	204
+Lock	synch.cc	/^Lock::Lock(char* debugName)$/
+Lock	synch.h	69
+MAIN	main.cc	40
+MAIN	main.cc	42
+MAIN_H	main.h	9
+MachineStateSize	thread.h	56
+Mmain.cc	main.cc	/^main(int argc, char **argv)$/
+NetworkTest	kernel.cc	/^Kernel::NetworkTest() {$/
+P	synch.cc	/^Semaphore::P()$/
+P1	switch.h	162
+P2	switch.h	163
+P3	switch.h	164
+P4	switch.h	165
+PC	switch.h	39
+PC	switch.h	79
+PC	switch.h	115
+PC	switch.h	243
+PCState	switch.h	56
+PCState	switch.h	87
+PCState	switch.h	123
+PCState	switch.h	145
+PCState	switch.h	214
+PCState	switch.h	259
+PLabelToAddr	thread.cc	/^PLabelToAddr(void *plabel)$/
+Print	main.cc	/^Print(char *name)$/
+Print	scheduler.cc	/^Scheduler::Print()$/
+Print	thread.h	/^    void Print() { cout << name; }$/
+READY	thread.h	65
+RUNNING	thread.h	65
+ReadyToRun	scheduler.cc	/^Scheduler::ReadyToRun (Thread *thread)$/
+Release	synch.cc	/^void Lock::Release()$/
+RemoveFront	synchlist.cc	/^SynchList<T>::RemoveFront()$/
+RestoreUserState	thread.cc	/^Thread::RestoreUserState()$/
+Run	scheduler.cc	/^Scheduler::Run (Thread *nextThread, bool finishing/
+RunUserProg	main.cc	/^RunUserProg(void *filename) {$/
+S0	switch.h	30
+S0	switch.h	99
+S0	switch.h	235
+S1	switch.h	31
+S1	switch.h	100
+S1	switch.h	236
+S10	switch.h	109
+S11	switch.h	110
+S12	switch.h	111
+S13	switch.h	112
+S14	switch.h	113
+S15	switch.h	114
+S2	switch.h	32
+S2	switch.h	101
+S2	switch.h	237
+S3	switch.h	33
+S3	switch.h	102
+S3	switch.h	238
+S4	switch.h	34
+S4	switch.h	103
+S4	switch.h	239
+S5	switch.h	35
+S5	switch.h	104
+S5	switch.h	240
+S6	switch.h	36
+S6	switch.h	105
+S6	switch.h	241
+S7	switch.h	37
+S7	switch.h	106
+S8	switch.h	107
+S9	switch.h	108
+SCHEDULER_H	scheduler.h	10
+SP	switch.h	29
+SP	switch.h	98
+SP	switch.h	161
+SP	switch.h	234
+STACK_FENCEPOST	thread.cc	26
+SWITCH	switch.S	/^SWITCH:$/
+SWITCH	switch.S	/^SWITCH:$/
+SWITCH	switch.S	/^SWITCH:$/
+SWITCH	switch.S	/^SWITCH:$/
+SWITCH_H	switch.h	19
+SYNCHLIST_H	synchlist.h	11
+SYNCH_H	synch.h	18
+SaveUserState	thread.cc	/^Thread::SaveUserState()$/
+Scheduler	scheduler.cc	/^Scheduler::Scheduler()$/
+Scheduler	scheduler.h	20
+SelfTest	synch.cc	/^Semaphore::SelfTest()$/
+SelfTest	synchlist.cc	/^SynchList<T>::SelfTest(T val)$/
+SelfTest	thread.cc	/^Thread::SelfTest()$/
+SelfTestHelper	synch.cc	/^SelfTestHelper (Semaphore *pong) $/
+SelfTestHelper	synchlist.cc	/^SynchList<T>::SelfTestHelper (void* data) $/
+Semaphore	synch.cc	/^Semaphore::Semaphore(char* debugName, int initialV/
+Semaphore	synch.h	40
+Signal	synch.cc	/^void Condition::Signal(Lock* conditionLock)$/
+SimpleThread	thread.cc	/^SimpleThread(int which)$/
+SimpleThread	threadtest.cc	/^SimpleThread(int which)$/
+Sleep	thread.cc	/^Thread::Sleep (bool finishing)$/
+StackAllocate	thread.cc	/^Thread::StackAllocate (VoidFunctionPtr func, void /
+StackSize	thread.h	61
+StartupLR	switch.h	221
+StartupPC	switch.h	54
+StartupPC	switch.h	85
+StartupPC	switch.h	121
+StartupPC	switch.h	155
+StartupPC	switch.h	257
+StartupPCState	switch.h	61
+StartupPCState	switch.h	91
+StartupPCState	switch.h	127
+StartupPCState	switch.h	150
+StartupPCState	switch.h	213
+StartupPCState	switch.h	264
+SynchList	synchlist.cc	/^SynchList<T>::SynchList()$/
+SynchList	synchlist.h	24
+THREAD_H	thread.h	38
+TOC	switch.h	205
+Thread	thread.cc	/^Thread::Thread(char* threadName)$/
+Thread	thread.h	79
+ThreadBegin	thread.cc	/^static void ThreadBegin() { kernel->currentThread-/
+ThreadFinish	thread.cc	/^static void ThreadFinish()    { kernel->currentThr/
+ThreadPrint	thread.cc	/^void ThreadPrint(Thread *t) { t->Print(); }$/
+ThreadRoot	switch.S	/^ThreadRoot:$/
+ThreadRoot	switch.S	/^ThreadRoot:$/
+ThreadRoot	switch.S	/^ThreadRoot:$/
+ThreadRoot	switch.S	/^ThreadRoot:$/
+ThreadSelfTest	kernel.cc	/^Kernel::ThreadSelfTest() {$/
+ThreadStatus	thread.h	65
+ThreadTest	threadtest.cc	/^ThreadTest()$/
+TransferSize	main.cc	72
+V	synch.cc	/^Semaphore::V()$/
+Wait	synch.cc	/^void Condition::Wait(Lock* conditionLock) $/
+WhenDoneLR	switch.h	220
+WhenDonePC	switch.h	53
+WhenDonePC	switch.h	84
+WhenDonePC	switch.h	120
+WhenDonePC	switch.h	154
+WhenDonePC	switch.h	256
+WhenDonePCState	switch.h	60
+WhenDonePCState	switch.h	90
+WhenDonePCState	switch.h	126
+WhenDonePCState	switch.h	149
+WhenDonePCState	switch.h	212
+WhenDonePCState	switch.h	263
+Yield	thread.cc	/^Thread::Yield ()$/
+_EAX	switch.h	135
+_EBP	switch.h	139
+_EBX	switch.h	136
+_ECX	switch.h	137
+_EDI	switch.h	141
+_EDX	switch.h	138
+_ESI	switch.h	140
+_ESP	switch.h	134
+_PC	switch.h	142
+_SWITCH	switch.S	/^_SWITCH:$/
+_SWITCH	switch.S	/^_SWITCH:		$/
+_SWITCH	switch.S	/^_SWITCH:$/
+_ThreadRoot	switch.S	/^_ThreadRoot:$/
+_ThreadRoot	switch.S	/^_ThreadRoot:	$/
+_ThreadRoot	switch.S	/^_ThreadRoot:$/
+alarm	kernel.h	51
+consoleIn	kernel.h	66
+consoleOut	kernel.h	67
+currentThread	kernel.h	47
+debug	main.cc	51
+debugUserProg	kernel.h	64
+fileSystem	kernel.h	56
+formatFlag	kernel.h	69
+getName	synch.h	/^    char* getName() { return name;}			\/\/ debugging/
+getName	synch.h	/^    char* getName() { return name; }	\/\/ debugging /
+getName	synch.h	/^    char* getName() { return (name); }$/
+getName	thread.h	/^    char* getName() { return (name); }$/
+hostName	kernel.h	60
+interrupt	kernel.h	49
+kernel	main.cc	50
+list	synchlist.h	40
+listEmpty	synchlist.h	42
+lock	synchlist.h	41
+lockHolder	synch.h	87
+machine	kernel.h	52
+machineState	thread.h	84
+name	synch.h	51
+name	synch.h	86
+name	synch.h	141
+name	thread.h	117
+ping	synch.cc	125
+postOfficeIn	kernel.h	57
+postOfficeOut	kernel.h	58
+queue	synch.h	53
+randomSlice	kernel.h	63
+readyList	scheduler.h	38
+reliability	kernel.h	65
+scheduler	kernel.h	48
+selfTestPing	synchlist.h	45
+semaphore	synch.h	88
+setStatus	thread.h	/^    void setStatus(ThreadStatus st) { status = st;/
+space	thread.h	134
+stack	thread.h	113
+stackTop	thread.h	83
+stats	kernel.h	50
+status	thread.h	116
+synchConsoleIn	kernel.h	53
+synchConsoleOut	kernel.h	54
+synchDisk	kernel.h	55
+timer	alarm.h	36
+toBeDestroyed	scheduler.h	40
+userRegisters	thread.h	127
+value	synch.h	52
+waitQueue	synch.h	142
+~Alarm	alarm.h	/^    ~Alarm() { delete timer; }$/
+~Condition	synch.cc	/^Condition::~Condition()$/
+~Kernel	kernel.cc	/^Kernel::~Kernel()$/
+~Lock	synch.cc	/^Lock::~Lock()$/
+~Scheduler	scheduler.cc	/^Scheduler::~Scheduler()$/
+~Semaphore	synch.cc	/^Semaphore::~Semaphore()$/
+~SynchList	synchlist.cc	/^SynchList<T>::~SynchList()$/
+~Thread	thread.cc	/^Thread::~Thread()$/

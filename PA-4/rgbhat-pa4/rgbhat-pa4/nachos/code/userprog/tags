@@ -1,0 +1,129 @@
+ADDRSPACE_H	addrspace.h	14
+AddrSpace	addrspace.cc	/^AddrSpace::AddrSpace()$/
+AddrSpace	addrspace.h	21
+CallBack	synchconsole.cc	/^SynchConsoleInput::CallBack()$/
+CallBack	synchconsole.cc	/^SynchConsoleOutput::CallBack()$/
+ConsoleInput	syscall.h	108
+ConsoleOutput	syscall.h	109
+E2BIG	errno.h	32
+EACCES	errno.h	38
+EAGAIN	errno.h	36
+EBADE	errno.h	77
+EBADF	errno.h	34
+EBADR	errno.h	78
+EBADRQC	errno.h	81
+EBADSLT	errno.h	82
+EBUSY	errno.h	41
+ECHILD	errno.h	35
+ECHRNG	errno.h	69
+EDEADLK	errno.h	60
+EDOM	errno.h	58
+EEXIST	errno.h	42
+EFAULT	errno.h	39
+EFBIG	errno.h	52
+EIDRM	errno.h	68
+EINTR	errno.h	29
+EINVAL	errno.h	47
+EIO	errno.h	30
+EISDIR	errno.h	46
+EL2HLT	errno.h	76
+EL2NSYNC	errno.h	70
+EL3HLT	errno.h	71
+EL3RST	errno.h	72
+ELNRNG	errno.h	73
+ELOOP	errno.h	65
+EMFILE	errno.h	49
+EMLINK	errno.h	56
+ENAMETOOLONG	errno.h	61
+ENFILE	errno.h	48
+ENOANO	errno.h	80
+ENOCSI	errno.h	75
+ENODEV	errno.h	44
+ENOENT	errno.h	27
+ENOEXEC	errno.h	33
+ENOLCK	errno.h	62
+ENOMEM	errno.h	37
+ENOMSG	errno.h	67
+ENOSPC	errno.h	53
+ENOSYS	errno.h	63
+ENOTBLK	errno.h	40
+ENOTDIR	errno.h	45
+ENOTEMPTY	errno.h	64
+ENOTTY	errno.h	50
+ENXIO	errno.h	31
+EPERM	errno.h	26
+EPIPE	errno.h	57
+ERANGE	errno.h	59
+EROFS	errno.h	55
+ERRNO_H	errno.h	22
+ESPIPE	errno.h	54
+ESRCH	errno.h	28
+ETXTBSY	errno.h	51
+EUNATCH	errno.h	74
+EWOULDBLOCK	errno.h	66
+EXDEV	errno.h	43
+EXFULL	errno.h	79
+ExceptionHandler	exception.cc	/^ExceptionHandler(ExceptionType which)$/
+Execute	addrspace.cc	/^AddrSpace::Execute() $/
+GetChar	synchconsole.cc	/^SynchConsoleInput::GetChar()$/
+InitRegisters	addrspace.cc	/^AddrSpace::InitRegisters()$/
+Load	addrspace.cc	/^AddrSpace::Load(char *fileName) $/
+NOFFMAGIC	noff.h	8
+NoffHeader	noff.h	28
+OpenFileId	syscall.h	100
+PutChar	synchconsole.cc	/^SynchConsoleOutput::PutChar(char ch)$/
+RestoreState	addrspace.cc	/^void AddrSpace::RestoreState() $/
+SC_Add	syscall.h	38
+SC_Close	syscall.h	31
+SC_Create	syscall.h	25
+SC_Exec	syscall.h	23
+SC_ExecV	syscall.h	34
+SC_Exit	syscall.h	22
+SC_Halt	syscall.h	21
+SC_Join	syscall.h	24
+SC_Open	syscall.h	27
+SC_Read	syscall.h	28
+SC_Remove	syscall.h	26
+SC_Seek	syscall.h	30
+SC_ThreadExit	syscall.h	35
+SC_ThreadFork	syscall.h	32
+SC_ThreadJoin	syscall.h	36
+SC_ThreadYield	syscall.h	33
+SC_Write	syscall.h	29
+SYNCHCONSOLE_H	synchconsole.h	12
+SYSCALLS_H	syscall.h	14
+SaveState	addrspace.cc	/^void AddrSpace::SaveState() $/
+Segment	noff.h	16
+SpaceId	syscall.h	68
+SwapHeader	addrspace.cc	/^SwapHeader (NoffHeader *noffH)$/
+SynchConsoleInput	synchconsole.cc	/^SynchConsoleInput::SynchConsoleInput(char *inputFi/
+SynchConsoleInput	synchconsole.h	23
+SynchConsoleOutput	synchconsole.cc	/^SynchConsoleOutput::SynchConsoleOutput(char *outpu/
+SynchConsoleOutput	synchconsole.h	38
+SysAdd	ksyscall.h	/^int SysAdd(int op1, int op2)$/
+SysHalt	ksyscall.h	/^void SysHalt()$/
+ThreadId	syscall.h	71
+Translate	addrspace.cc	/^AddrSpace::Translate(unsigned int vaddr, unsigned /
+UserStackSize	addrspace.h	19
+__USERPROG_KSYSCALL_H__	ksyscall.h	12
+code	noff.h	20
+consoleInput	synchconsole.h	31
+consoleOutput	synchconsole.h	46
+inFileAddr	noff.h	14
+initData	noff.h	21
+lock	synchconsole.h	32
+lock	synchconsole.h	47
+noffHeader	noff.h	18
+noffMagic	noff.h	19
+numPages	addrspace.h	45
+pageTable	addrspace.h	43
+readonlyData	noff.h	23
+segment	noff.h	12
+size	noff.h	15
+uninitData	noff.h	25
+virtualAddr	noff.h	13
+waitFor	synchconsole.h	33
+waitFor	synchconsole.h	48
+~AddrSpace	addrspace.cc	/^AddrSpace::~AddrSpace()$/
+~SynchConsoleInput	synchconsole.cc	/^SynchConsoleInput::~SynchConsoleInput()$/
+~SynchConsoleOutput	synchconsole.cc	/^SynchConsoleOutput::~SynchConsoleOutput()$/

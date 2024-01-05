@@ -1,0 +1,66 @@
+A	matmult.c	16
+A	sort.c	25
+AS	Makefile	/^AS = $(GCCDIR)as$/
+Add	start.S	/^Add:$/
+B	matmult.c	17
+BLDDIR	Makefile	/^BLDDIR=build$/
+C	matmult.c	18
+CC	Makefile	/^CC = $(GCCDIR)gcc$/
+CFLAGS	Makefile	/^CFLAGS = -G 0 -c $(INCDIR) -B\/usr\/local\/nachos\/lib/
+Close	start.S	/^Close:$/
+Create	start.S	/^Create:$/
+Dim	matmult.c	12
+Exec	start.S	/^Exec:$/
+ExecV	start.S	/^ExecV:$/
+Exit	sort.c	18
+Exit	start.S	/^Exit:$/
+Halt	start.S	/^Halt:$/
+INCDIR	Makefile	/^INCDIR =-I..\/userprog -I..\/lib$/
+Join	start.S	/^Join:$/
+LD	Makefile	/^LD = $(GCCDIR)ld$/
+Madd	add.c	/^main()$/
+Mhalt	halt.c	/^main()$/
+Mmatmult	matmult.c	/^main()$/
+Msegments	segments.c	/^main()$/
+Mshell	shell.c	/^main()$/
+Msort	sort.c	/^main()$/
+N	segments.c	17
+OUTPUT_FORMAT	script	/^OUTPUT_FORMAT("ecoff-littlemips")$/
+Open	start.S	/^Open:$/
+PROGRAMS	Makefile	/^PROGRAMS = unknownhost$/
+PROGRAMS	Makefile	/^PROGRAMS = add halt shell matmult sort segments$/
+Read	start.S	/^Read:$/
+Remove	start.S	/^Remove:$/
+SIZE	sort.c	23
+Seek	start.S	/^Seek:$/
+ThreadExit	start.S	/^ThreadExit:$/
+ThreadFork	start.S	/^ThreadFork:$/
+ThreadJoin	start.S	/^ThreadJoin:$/
+ThreadYield	start.S	/^ThreadYield:$/
+Write	start.S	/^Write:$/
+__main	start.S	/^__main:$/
+__start	script	/^ENTRY(__start)$/
+__start	start.S	/^__start:$/
+add	Makefile	/^add: add.o start.o$/
+add.o	Makefile	/^add.o: add.c$/
+all	Makefile	/^all: $(PROGRAMS) post$/
+blah	segments.c	21
+clean	Makefile	/^clean:$/
+distclean	Makefile	/^distclean: clean$/
+halt	Makefile	/^halt: halt.o start.o$/
+halt.o	Makefile	/^halt.o: halt.c$/
+initdata1	segments.c	19
+initdata2	segments.c	20
+matmult	Makefile	/^matmult: matmult.o start.o$/
+matmult.o	Makefile	/^matmult.o: matmult.c$/
+osname	Makefile.dep	13
+post	Makefile	/^post:$/
+segments	Makefile	/^segments: segments.o start.o$/
+segments.o	Makefile	/^segments.o: segments.c$/
+shell	Makefile	/^shell: shell.o start.o$/
+shell.o	Makefile	/^shell.o: shell.c$/
+sort	Makefile	/^sort: sort.o start.o$/
+sort.o	Makefile	/^sort.o: sort.c$/
+start.o	Makefile	/^start.o: start.S ..\/userprog\/syscall.h$/
+uninitdata	segments.c	22
+unknownhost	Makefile	/^unknownhost:$/

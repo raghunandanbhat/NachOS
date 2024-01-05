@@ -1,0 +1,311 @@
+AddressErrorException	machine.h	50
+BCOND	mipssim.h	106
+BadVAddrReg	machine.h	74
+BusErrorException	machine.h	48
+CALLBACK_H	callback.h	27
+CONSOLE_H	console.h	28
+CallBack	console.cc	/^ConsoleInput::CallBack()$/
+CallBack	console.cc	/^ConsoleOutput::CallBack()$/
+CallBack	disk.cc	/^Disk::CallBack ()$/
+CallBack	network.cc	/^NetworkInput::CallBack()$/
+CallBack	network.cc	/^NetworkOutput::CallBack()$/
+CallBack	timer.cc	/^Timer::CallBack() $/
+CallBackObj	callback.h	33
+CallBackObj	callback.h	/^     CallBackObj() {};	\/\/ to prevent anyone from c/
+ChangeLevel	interrupt.cc	/^Interrupt::ChangeLevel(IntStatus old, IntStatus no/
+CheckEndian	machine.cc	/^void CheckEndian()$/
+CheckIfDue	interrupt.cc	/^Interrupt::CheckIfDue(bool advanceClock)$/
+ComputeLatency	disk.cc	/^Disk::ComputeLatency(int newSector, bool writing)$/
+ConsoleInput	console.cc	/^ConsoleInput::ConsoleInput(char *readFile, CallBac/
+ConsoleInput	console.h	47
+ConsoleOutput	console.cc	/^ConsoleOutput::ConsoleOutput(char *writeFile, Call/
+ConsoleOutput	console.h	70
+ConsoleReadInt	interrupt.h	51
+ConsoleTime	stats.h	56
+ConsoleWriteInt	interrupt.h	51
+DISK_H	disk.h	18
+Debugger	machine.cc	/^void Machine::Debugger()$/
+Decode	mipssim.cc	/^Instruction::Decode()$/
+DelayedLoad	mipssim.cc	/^Machine::DelayedLoad(int nextReg, int nextValue)$/
+Disable	timer.h	/^    void Disable() { disable = TRUE; }$/
+Disk	disk.cc	/^Disk::Disk(CallBackObj *toCall)$/
+Disk	disk.h	56
+DiskInt	interrupt.h	51
+DiskSize	disk.cc	28
+DumpState	interrupt.cc	/^Interrupt::DumpState()$/
+DumpState	machine.cc	/^Machine::DumpState()$/
+EXTRA	mipssim.h	155
+Enable	interrupt.h	/^    void Enable() { (void) SetLevel(IntOn); }$/
+ExceptionType	machine.h	43
+GetChar	console.cc	/^ConsoleInput::GetChar()$/
+Halt	interrupt.cc	/^Interrupt::Halt()$/
+HiReg	machine.h	67
+IFMT	mipssim.h	108
+INTERRUPT_H	interrupt.h	34
+Idle	interrupt.cc	/^Interrupt::Idle()$/
+IdleMode	interrupt.h	46
+IllegalInstrException	machine.h	54
+IndexToAddr	mipssim.h	/^#define IndexToAddr(x) ((x) << 2)$/
+Instruction	mipssim.cc	34
+IntOff	interrupt.h	41
+IntOn	interrupt.h	41
+IntStatus	interrupt.h	41
+IntType	interrupt.h	51
+Interrupt	interrupt.cc	/^Interrupt::Interrupt()$/
+Interrupt	interrupt.h	76
+JFMT	mipssim.h	109
+LoReg	machine.h	68
+LoadReg	machine.h	72
+LoadValueReg	machine.h	73
+MACHINE_H	machine.h	22
+MIPSSIM_H	mipssim.h	11
+Machine	machine.cc	/^Machine::Machine(bool debug)$/
+Machine	machine.h	94
+MachineStatus	interrupt.h	46
+MagicNumber	disk.cc	26
+MagicSize	disk.cc	27
+MaxOpcode	mipssim.h	88
+MaxPacketSize	network.h	42
+MaxWireSize	network.h	41
+MemorySize	machine.h	40
+ModuloDiff	disk.cc	/^Disk::ModuloDiff(int to, int from)$/
+Mult	mipssim.cc	/^Mult(int a, int b, bool signedArith, int* hiPtr, i/
+NETWORK_H	network.h	16
+NONE	mipssim.h	155
+NetworkAddress	network.h	24
+NetworkInput	network.cc	/^NetworkInput::NetworkInput(CallBackObj *toCall)$/
+NetworkInput	network.h	56
+NetworkOutput	network.cc	/^NetworkOutput::NetworkOutput(double reliability, C/
+NetworkOutput	network.h	83
+NetworkRecvInt	interrupt.h	52
+NetworkSendInt	interrupt.h	52
+NetworkTime	stats.h	57
+NextPCReg	machine.h	70
+NoException	machine.h	43
+NumExceptionTypes	machine.h	56
+NumGPRegs	machine.h	66
+NumPhysPages	machine.h	38
+NumSectors	disk.h	53
+NumTotalRegs	machine.h	76
+NumTracks	disk.h	52
+OP_ADD	mipssim.h	25
+OP_ADDI	mipssim.h	26
+OP_ADDIU	mipssim.h	27
+OP_ADDU	mipssim.h	28
+OP_AND	mipssim.h	29
+OP_ANDI	mipssim.h	30
+OP_BEQ	mipssim.h	31
+OP_BGEZ	mipssim.h	32
+OP_BGEZAL	mipssim.h	33
+OP_BGTZ	mipssim.h	34
+OP_BLEZ	mipssim.h	35
+OP_BLTZ	mipssim.h	36
+OP_BLTZAL	mipssim.h	37
+OP_BNE	mipssim.h	38
+OP_DIV	mipssim.h	40
+OP_DIVU	mipssim.h	41
+OP_J	mipssim.h	42
+OP_JAL	mipssim.h	43
+OP_JALR	mipssim.h	44
+OP_JR	mipssim.h	45
+OP_LB	mipssim.h	46
+OP_LBU	mipssim.h	47
+OP_LH	mipssim.h	48
+OP_LHU	mipssim.h	49
+OP_LUI	mipssim.h	50
+OP_LW	mipssim.h	51
+OP_LWL	mipssim.h	52
+OP_LWR	mipssim.h	53
+OP_MFHI	mipssim.h	55
+OP_MFLO	mipssim.h	56
+OP_MTHI	mipssim.h	58
+OP_MTLO	mipssim.h	59
+OP_MULT	mipssim.h	60
+OP_MULTU	mipssim.h	61
+OP_NOR	mipssim.h	62
+OP_OR	mipssim.h	63
+OP_ORI	mipssim.h	64
+OP_RES	mipssim.h	87
+OP_RFE	mipssim.h	65
+OP_SB	mipssim.h	66
+OP_SH	mipssim.h	67
+OP_SLL	mipssim.h	68
+OP_SLLV	mipssim.h	69
+OP_SLT	mipssim.h	70
+OP_SLTI	mipssim.h	71
+OP_SLTIU	mipssim.h	72
+OP_SLTU	mipssim.h	73
+OP_SRA	mipssim.h	74
+OP_SRAV	mipssim.h	75
+OP_SRL	mipssim.h	76
+OP_SRLV	mipssim.h	77
+OP_SUB	mipssim.h	78
+OP_SUBU	mipssim.h	79
+OP_SW	mipssim.h	80
+OP_SWL	mipssim.h	81
+OP_SWR	mipssim.h	82
+OP_SYSCALL	mipssim.h	85
+OP_UNIMP	mipssim.h	86
+OP_XOR	mipssim.h	83
+OP_XORI	mipssim.h	84
+OneInstruction	mipssim.cc	/^Machine::OneInstruction(Instruction *instr)$/
+OneTick	interrupt.cc	/^Interrupt::OneTick()$/
+OpInfo	mipssim.h	112
+OpString	mipssim.h	157
+OverflowException	machine.h	53
+PCReg	machine.h	69
+PacketHeader	network.h	32
+PageFaultException	machine.h	45
+PageSize	machine.h	30
+PendingCompare	interrupt.cc	/^PendingCompare (PendingInterrupt *x, PendingInterr/
+PendingInterrupt	interrupt.cc	/^PendingInterrupt::PendingInterrupt(CallBackObj *ca/
+PendingInterrupt	interrupt.h	58
+PrevPCReg	machine.h	71
+Print	stats.cc	/^Statistics::Print()$/
+PrintPending	interrupt.cc	/^PrintPending (PendingInterrupt *pending)$/
+PrintSector	disk.cc	/^PrintSector (bool writing, int sector, char *data)/
+PutChar	console.cc	/^ConsoleOutput::PutChar(char ch)$/
+R31	mipssim.h	97
+RD	mipssim.h	155
+RFMT	mipssim.h	110
+RS	mipssim.h	155
+RT	mipssim.h	155
+RaiseException	machine.cc	/^Machine::RaiseException(ExceptionType which, int b/
+ReadMem	translate.cc	/^Machine::ReadMem(int addr, int size, int *value)$/
+ReadOnlyException	machine.h	46
+ReadRegister	machine.cc	/^Machine::ReadRegister(int num)$/
+ReadRequest	disk.cc	/^Disk::ReadRequest(int sectorNumber, char* data)$/
+Receive	network.cc	/^NetworkInput::Receive(char* data)$/
+RegType	mipssim.h	155
+RetAddrReg	machine.h	65
+RotationTime	stats.h	54
+Run	mipssim.cc	/^Machine::Run()$/
+SIGN_BIT	mipssim.h	96
+SPECIAL	mipssim.h	105
+STATS_H	stats.h	12
+Schedule	interrupt.cc	/^Interrupt::Schedule(CallBackObj *toCall, int fromN/
+SectorSize	disk.h	50
+SectorsPerTrack	disk.h	51
+SeekTime	stats.h	55
+Send	network.cc	/^NetworkOutput::Send(PacketHeader hdr, char* data)$/
+SetInterrupt	timer.cc	/^Timer::SetInterrupt() $/
+SetLevel	interrupt.cc	/^Interrupt::SetLevel(IntStatus now)$/
+ShortToHost	translate.cc	/^ShortToHost(unsigned short shortword) {$/
+ShortToMachine	translate.cc	/^ShortToMachine(unsigned short shortword) { return /
+StackReg	machine.h	64
+Statistics	stats.cc	/^Statistics::Statistics()$/
+Statistics	stats.h	22
+SyscallException	machine.h	44
+SystemMode	interrupt.h	46
+SystemTick	stats.h	53
+TIMER_H	timer.h	21
+TLBSize	machine.h	41
+TLB_H	translate.h	19
+TimeToSeek	disk.cc	/^Disk::TimeToSeek(int newSector, int *rotation) $/
+Timer	timer.cc	/^Timer::Timer(bool doRandom, CallBackObj *toCall)$/
+Timer	timer.h	28
+TimerInt	interrupt.h	51
+TimerTicks	stats.h	58
+Translate	translate.cc	/^Machine::Translate(int virtAddr, int* physAddr, in/
+TranslationEntry	translate.h	30
+TypeToReg	mipssim.cc	/^TypeToReg(RegType reg, Instruction *instr)$/
+UpdateLast	disk.cc	/^Disk::UpdateLast(int newSector)$/
+UserMode	interrupt.h	46
+UserTick	stats.h	52
+WordToHost	translate.cc	/^WordToHost(unsigned int word) {$/
+WordToMachine	translate.cc	/^WordToMachine(unsigned int word) { return WordToHo/
+WriteMem	translate.cc	/^Machine::WriteMem(int addr, int size, int value)$/
+WriteRegister	machine.cc	/^Machine::WriteRegister(int num, int value)$/
+WriteRequest	disk.cc	/^Disk::WriteRequest(int sectorNumber, char* data)$/
+YieldOnReturn	interrupt.cc	/^Interrupt::YieldOnReturn()$/
+active	disk.h	82
+args	mipssim.h	159
+bufferInit	disk.h	84
+callOnInterrupt	interrupt.h	64
+callPeriodically	timer.h	41
+callWhenAvail	console.h	63
+callWhenAvail	network.h	75
+callWhenDone	console.h	85
+callWhenDone	disk.h	81
+callWhenDone	network.h	105
+chanceToWork	network.h	104
+charword	machine.cc	31
+checkit	machine.cc	30
+dirty	translate.h	41
+disable	timer.h	42
+diskname	disk.h	80
+exceptionNames	machine.cc	16
+extra	mipssim.cc	43
+fileno	disk.h	79
+format	mipssim.h	114
+format	mipssim.h	158
+from	network.h	35
+getLevel	interrupt.h	/^    IntStatus getLevel() {return level;}$/
+getStatus	interrupt.h	/^    MachineStatus getStatus() { return status; } $/
+idleTicks	stats.h	25
+inHandler	interrupt.h	124
+inHdr	network.h	79
+inbox	network.h	80
+incoming	console.h	65
+intLevelNames	interrupt.cc	29
+intTypeNames	interrupt.cc	30
+intword	machine.cc	32
+lastSector	disk.h	83
+length	network.h	36
+level	interrupt.h	120
+mainMemory	machine.h	114
+numConsoleCharsRead	stats.h	33
+numConsoleCharsWritten	stats.h	34
+numDiskReads	stats.h	31
+numDiskWrites	stats.h	32
+numPacketsRecvd	stats.h	37
+numPacketsSent	stats.h	36
+numPageFaults	stats.h	35
+opCode	mipssim.cc	40
+opCode	mipssim.h	113
+opStrings	mipssim.h	162
+opTable	mipssim.h	117
+packetAvail	network.h	77
+pageTable	machine.h	138
+pageTableSize	machine.h	139
+pending	interrupt.h	121
+physicalPage	translate.h	33
+putBusy	console.h	87
+randomize	timer.h	40
+rd	mipssim.cc	42
+readFileNo	console.h	62
+readOnly	translate.h	37
+registers	machine.h	174
+rs	mipssim.cc	42
+rt	mipssim.cc	42
+runUntilTime	machine.h	178
+sendBusy	network.h	107
+setStatus	interrupt.h	/^    void setStatus(MachineStatus st) { status = st/
+singleStep	machine.h	176
+sock	network.h	72
+sock	network.h	103
+sockName	network.h	73
+specialTable	mipssim.h	141
+status	interrupt.h	127
+systemTicks	stats.h	26
+tlb	machine.h	135
+to	network.h	34
+totalTicks	stats.h	24
+type	interrupt.h	68
+use	translate.h	39
+userTicks	stats.h	27
+valid	translate.h	35
+value	mipssim.cc	38
+virtualPage	translate.h	32
+when	interrupt.h	67
+writeFileNo	console.h	84
+yieldOnReturn	interrupt.h	125
+~CallBackObj	callback.h	/^     virtual ~CallBackObj() {};$/
+~ConsoleInput	console.cc	/^ConsoleInput::~ConsoleInput()$/
+~ConsoleOutput	console.cc	/^ConsoleOutput::~ConsoleOutput()$/
+~Disk	disk.cc	/^Disk::~Disk()$/
+~Interrupt	interrupt.cc	/^Interrupt::~Interrupt()$/
+~Machine	machine.cc	/^Machine::~Machine()$/
+~NetworkInput	network.cc	/^NetworkInput::~NetworkInput()$/
+~NetworkOutput	network.cc	/^NetworkOutput::~NetworkOutput()$/
+~Timer	timer.h	/^    virtual ~Timer() {}$/

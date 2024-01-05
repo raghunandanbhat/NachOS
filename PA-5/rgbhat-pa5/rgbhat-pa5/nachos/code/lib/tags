@@ -1,0 +1,159 @@
+ASSERT	debug.h	/^#define ASSERT(condition)                         /
+ASSERTNOTREACHED	debug.h	/^#define ASSERTNOTREACHED()                        /
+Abort	sysdep.cc	/^Abort()$/
+AllocBoundedArray	sysdep.cc	/^AllocBoundedArray(int size)$/
+Append	list.cc	/^List<T>::Append(T item)$/
+Append	list.h	/^    void Append(T item) { Insert(item); }   \/\/ nei/
+Apply	hash.cc	/^HashTable<Key,T>::Apply(void (*func)(T)) const$/
+Apply	list.cc	/^List<T>::Apply(void (*func)(T)) const$/
+AssignNameToSocket	sysdep.cc	/^AssignNameToSocket(char *socketName, int sockID)$/
+BITMAP_H	bitmap.h	16
+Bitmap	bitmap.cc	/^Bitmap::Bitmap(int numItems) $/
+Bitmap	bitmap.h	33
+BitsInByte	bitmap.h	22
+BitsInWord	bitmap.h	23
+Bucket	hash.h	67
+CallOnUserAbort	sysdep.cc	/^CallOnUserAbort(void (*func)(int))$/
+Clear	bitmap.cc	/^Bitmap::Clear(int which) $/
+Close	sysdep.cc	/^Close(int fd)$/
+CloseSocket	sysdep.cc	/^CloseSocket(int sockID)$/
+DEBUG	debug.h	/^#define DEBUG(flag,expr)                          /
+DEBUG_H	debug.h	14
+DeAssignNameToSocket	sysdep.cc	/^DeAssignNameToSocket(char *socketName)$/
+DeallocBoundedArray	sysdep.cc	/^DeallocBoundedArray(char *ptr, int \/* size *\/)$/
+DeallocBoundedArray	sysdep.cc	/^DeallocBoundedArray(char *ptr, int size)$/
+Debug	debug.cc	/^Debug::Debug(char *flagList)$/
+Debug	debug.h	33
+Delay	sysdep.cc	/^Delay(int seconds)$/
+DeleteBuckets	hash.cc	/^HashTable<Key,T>::DeleteBuckets(List<T> **table, i/
+Exit	sysdep.cc	/^Exit(int exitCode)$/
+FALSE	utility.h	17
+Find	hash.cc	/^HashTable<Key,T>::Find(Key key, T *itemPtr) const$/
+FindAndSet	bitmap.cc	/^Bitmap::FindAndSet() $/
+FindInBucket	hash.cc	/^HashTable<Key,T>::FindInBucket(int bucket, $/
+FindNextFullBucket	hash.cc	/^HashTable<Key,T>::FindNextFullBucket(int bucket) c/
+Front	list.h	/^    T Front() { return first->item; }$/
+HASH_H	hash.h	30
+HashInt	libtest.cc	/^HashInt(int key) {$/
+HashIterator	hash.cc	/^HashIterator<Key,T>::HashIterator(HashTable<Key,T>/
+HashIterator	hash.h	102
+HashKey	libtest.cc	/^HashKey(char *str) {$/
+HashTable	hash.cc	/^HashTable<Key,T>::HashTable(Key (*get)(T x), unsig/
+HashTable	hash.h	42
+HashTable	hash.h	115
+HashValue	hash.cc	/^HashTable<Key, T>::HashValue(Key key) const $/
+IncreaseSizeBy	hash.cc	18
+InitBuckets	hash.cc	/^HashTable<Key,T>::InitBuckets(int sz)$/
+InitSocketName	sysdep.cc	/^InitSocketName(struct sockaddr_un *uname, char *na/
+InitialBuckets	hash.cc	16
+Insert	hash.cc	/^HashTable<Key,T>::Insert(T item)$/
+Insert	list.cc	/^SortedList<T>::Insert(T item)$/
+IntCompare	libtest.cc	/^IntCompare(int x, int y) {$/
+IsDone	hash.h	/^    bool IsDone() { return (bucket == table->numBu/
+IsDone	list.h	/^    bool IsDone() { return current == NULL; };$/
+IsEmpty	hash.h	/^    bool IsEmpty() { return numItems == 0; }	$/
+IsEmpty	list.h	/^    bool IsEmpty() { return (numInList == 0); };$/
+IsEnabled	debug.cc	/^Debug::IsEnabled(char flag)$/
+IsInList	list.cc	/^List<T>::IsInList(T item) const$/
+IsInTable	hash.h	/^    bool IsInTable(Key key) { T dummy; return Find/
+Item	hash.h	/^    T Item() { ASSERT(!IsDone()); return bucketIte/
+Item	list.h	/^    T Item() { ASSERT(!IsDone()); return current->/
+LIBTEST_H	libtest.h	9
+LIST_H	list.h	14
+LibSelfTest	libtest.cc	/^LibSelfTest () {$/
+List	list.cc	/^List<T>::List()$/
+List	list.h	44
+ListElement	list.cc	/^ListElement<T>::ListElement(T itm)$/
+ListElement	list.h	28
+ListIterator	list.h	121
+ListIterator	list.h	/^    ListIterator(List<T> *list) { current = list->/
+Lseek	sysdep.cc	/^Lseek(int fd, int offset, int whence)$/
+Mark	bitmap.cc	/^Bitmap::Mark(int which) $/
+NO_MPROT	sysdep.cc	44
+NO_MPROT	sysdep.cc	47
+NULL	utility.h	15
+Next	hash.cc	/^HashIterator<Key,T>::Next() $/
+Next	list.h	/^    void Next() { current = current->next; };		$/
+NumClear	bitmap.cc	/^Bitmap::NumClear() const$/
+NumInList	list.h	/^    unsigned int NumInList() { return numInList;};/
+OSF_OR_AIX	sysdep.cc	76
+OSF_OR_AIX	sysdep.cc	79
+OpenForReadWrite	sysdep.cc	/^OpenForReadWrite(char *name, bool crashOnError)$/
+OpenForWrite	sysdep.cc	/^OpenForWrite(char *name)$/
+OpenSocket	sysdep.cc	/^OpenSocket()$/
+PollFile	sysdep.cc	/^PollFile(int fd)$/
+PollSocket	sysdep.cc	/^PollSocket(int sockID)$/
+Prepend	list.cc	/^List<T>::Prepend(T item)$/
+Prepend	list.h	/^    void Prepend(T item) { Insert(item); }  \/\/ *pr/
+Print	bitmap.cc	/^Bitmap::Print() const$/
+RandomInit	sysdep.cc	/^RandomInit(unsigned seed)$/
+RandomNumber	sysdep.cc	/^RandomNumber()$/
+ReHash	hash.cc	/^HashTable<Key,T>::ReHash()$/
+Read	sysdep.cc	/^Read(int fd, char *buffer, int nBytes)$/
+ReadFromSocket	sysdep.cc	/^ReadFromSocket(int sockID, char *buffer, int packe/
+ReadPartial	sysdep.cc	/^ReadPartial(int fd, char *buffer, int nBytes)$/
+Remove	hash.cc	/^HashTable<Key,T>::Remove(Key key)$/
+Remove	list.cc	/^List<T>::Remove(T item)$/
+RemoveFront	list.cc	/^List<T>::RemoveFront()$/
+ResizeRatio	hash.cc	17
+SYSDEP_H	sysdep.h	12
+SanityCheck	hash.cc	/^HashTable<Key,T>::SanityCheck() const$/
+SanityCheck	list.cc	/^List<T>::SanityCheck() const$/
+SanityCheck	list.cc	/^SortedList<T>::SanityCheck() const$/
+SelfTest	bitmap.cc	/^Bitmap::SelfTest() $/
+SelfTest	hash.cc	/^HashTable<Key,T>::SelfTest(T *p, int numEntries)$/
+SelfTest	list.cc	/^List<T>::SelfTest(T *p, int numEntries)$/
+SelfTest	list.cc	/^SortedList<T>::SelfTest(T *p, int numEntries)$/
+SendToSocket	sysdep.cc	/^SendToSocket(int sockID, char *buffer, int packetS/
+SortedList	list.h	92
+SortedList	list.h	/^    SortedList(int (*comp)(T x, T y)) : List<T>() /
+TRUE	utility.h	16
+Tell	sysdep.cc	/^Tell(int fd)$/
+Test	bitmap.cc	/^Bitmap::Test(int which) const$/
+UDelay	sysdep.cc	/^UDelay(unsigned int useconds)$/
+UNIMPLEMENTED	debug.h	/^#define UNIMPLEMENTED()                           /
+UTILITY_H	utility.h	9
+Unlink	sysdep.cc	/^Unlink(char *name)$/
+VoidFunctionPtr	utility.h	35
+VoidNoArgFunctionPtr	utility.h	36
+WriteFile	sysdep.cc	/^WriteFile(int fd, char *buffer, int nBytes)$/
+bucket	hash.h	116
+bucketIter	hash.h	117
+buckets	hash.h	69
+copyright	copyright.h	23
+current	list.h	136
+dbgAddr	debug.h	29
+dbgAll	debug.h	22
+dbgDisk	debug.h	27
+dbgFile	debug.h	28
+dbgInt	debug.h	25
+dbgMach	debug.h	26
+dbgNet	debug.h	30
+dbgSynch	debug.h	24
+dbgSys	debug.h	31
+dbgThread	debug.h	23
+divRoundDown	utility.h	/^#define divRoundDown(n,s)  ((n) \/ (s))$/
+divRoundUp	utility.h	/^#define divRoundUp(n,s)    (((n) \/ (s)) + ((((n) %/
+enableFlags	debug.h	40
+first	list.h	74
+hash	hash.cc	/^unsigned long hash(class T x){$/
+hashTestVector	libtest.cc	58
+item	list.h	32
+last	list.h	75
+listTestVector	libtest.cc	54
+map	bitmap.h	56
+max	utility.h	/^#define max(a,b)  (((a) > (b)) ? (a) : (b))$/
+min	utility.h	/^#define min(a,b)  (((a) < (b)) ? (a) : (b))$/
+next	list.h	31
+numBits	bitmap.h	51
+numBuckets	hash.h	70
+numInList	list.h	76
+numItems	hash.h	71
+numWords	bitmap.h	52
+std	sysdep.h	20
+table	hash.h	115
+~Bitmap	bitmap.cc	/^Bitmap::~Bitmap()$/
+~HashIterator	hash.h	/^    ~HashIterator() { if (bucketIter != NULL) dele/
+~HashTable	hash.cc	/^HashTable<Key,T>::~HashTable()$/
+~List	list.cc	/^List<T>::~List()$/
+~SortedList	list.h	/^    ~SortedList() {};		\/\/ base class destructor ca/
